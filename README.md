@@ -15,7 +15,6 @@ Fix for SQL server 2019 / 2022 in windows 11
 1.Add the key New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device" -Name   "ForcedPhysicalSectorSizeInBytes" -PropertyType MultiString        -Force -Value "* 4095" </br>
 2.Validate if the key was added successfully. Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device" -Name   "ForcedPhysicalSectorSizeInBytes"
 
-
-
+<img width="865" alt="MSSQL" src="https://github.com/user-attachments/assets/ec7520dc-1d0a-4ab1-b671-d387f10835c8">
 
 
