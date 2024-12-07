@@ -17,6 +17,9 @@ The errors discussed in this article are related to system disk sector size grea
 
 # PowerShell as Administrator.
 1.Add the key New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device" -Name   "ForcedPhysicalSectorSizeInBytes" -PropertyType MultiString        -Force -Value "* 4095" </br>
+2.Validate if the key was added successfully. Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device" -Name   "ForcedPhysicalSectorSizeInBytes"
+
+
 
 
 
