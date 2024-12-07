@@ -1,7 +1,6 @@
 # MSSQL
 Fix for SQL server 2019 / 2022 in windows 11
 # Applies to:   SQL Server all versions.
-# Notes : You might encounter the failures mentioned in the previous scenarios for a SQL Server instance you installed manually or on a LocalDB instance installed by applications.
 # Steps :
    1.First To Open the **Registry**.<br/>
    2.Navigate to Path : Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device .<br/>
