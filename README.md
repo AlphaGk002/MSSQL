@@ -6,7 +6,7 @@ The errors discussed in this article are related to system disk sector size grea
 # Applies to:   SQL Server all versions.
 # Notes : You might encounter the failures mentioned in the previous scenarios for a SQL Server instance you installed manually or on a LocalDB instance installed by applications.
 # Steps :
-   1.First To Open the **Registry** .
+   1.First To Open the **Registry**.
    2.Navigate to Path : Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device .
    3.On the Edit menu, point to New, and then select Multi-String value. Name it **ForcedPhysicalSectorSizeInBytes** .
    4.Modify the new value, type in * 4095. Select OK and close the Registry editor.
