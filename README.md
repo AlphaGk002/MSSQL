@@ -9,8 +9,6 @@ Fix for SQL server 2019 / 2022 in windows 11
    
 # Command Prompt as Administrator.
 1.Add the key REG ADD "HKLM\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device" /v "ForcedPhysicalSectorSizeInBytes" /t   REG_MULTI_SZ /d "* 4095" /f <br/>
-<img width="869" alt="image" src="https://github.com/user-attachments/assets/2593f462-52c8-48c0-ac99-79f93e8bdc8f">
-
 2.Validate if the key was added successfully. REG QUERY "HKLM\SYSTEM\CurrentControlSet\Services\stornvme\Parameters\Device" /v "ForcedPhysicalSectorSizeInBytes"  <br/>
 
 # PowerShell as Administrator.
